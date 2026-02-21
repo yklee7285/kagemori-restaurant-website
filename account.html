@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kagemori</title>
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="accountstyle.css">
+        <link rel="stylesheet" href="navbar_footer.css">
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Shippori+Mincho&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <div class="background">
+        <!-- Navbar -->
+        <nav class="navbar">
+
+            <div class="navbar-container">
+                <a href="index.html"><img class="navbar-logo" src="logo/logo.png" alt="logo"></a>
+                <div class="navbar-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                    <ul class="navbar-menu">
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="index.html">Home</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="about.html">About</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a id="navbar-login" class="navbar-link active" href="login.html">LOGIN | SIGNUP</a>
+                        </li>
+                    </ul>
+            </div>
+            
+        </nav>
+        <div class="top-container">
+            <!-- Account -->
+            <div class="account-container">
+                <h1>Welcome to Kagemori!</h1>
+                <p>Manage your profile and track your loyalty points here!</p>
+                <div class="loyalty-program-container">
+                    <h2>Kagemori Loyalty Program</h2>
+                    <p>Earn rewards for dining at our retaurant! <br> You currently have: <strong>140 points</strong>.</p>
+                
+                    <div class="progress-section">
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                        <p>70% to your next reward! <strong>60 points</strong> needed.</p>
+                    </div>
+                
+                    <div class="rewards-section">
+                        <h3>Available Rewards</h3>
+                        <ul>
+                            <li>
+                                <div class="reward-item">
+                                    <p><strong>Free Dessert</strong> (200 points)</p>
+                                    <button class="claim-button" disabled>Claim</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="reward-item">
+                                    <p><strong>20% Voucher</strong> (300 points)</p>
+                                    <button class="claim-button" disabled>Claim</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="reward-item">
+                                    <p><strong>RM50 Gift Card</strong> (500 points)</p>
+                                    <button class="claim-button" disabled>Claim</button>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>      
+                <a href="index.html"><button class="logout-button">Log Out</button></a>
+            </div>     
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-contact">
+                <div class="footer-text">
+                    <p><span class="bold">Contact</span></p><br>
+                    <p>
+                        <span class="bold">Phone Number</span>
+                        <br>
+                        <span class="dark">603-33416988</span>
+                    </p>
+                    <br>
+                    <p>
+                        <span class="bold">Email</span>
+                        <br>
+                        <span class="dark">kagemorijpcuisine@gmail.com</span>
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="line"></div>
+
+            <div class="footer-location">
+                <div class="footer-text">
+                    <p><span class="bold">Location</span></p>
+                    <br>
+                    <p><span class="dark">49, Jalan Lang,<br>Taman Berkerley,<br>41150 Klang,<br>Selangor, Malaysia.</span></p>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="footer-operating">
+                <div class="footer-text">
+                    <p><span class="bold">Operating Hours</span></p>
+                    <br>
+                    <p>
+                        <span class="bold">Mon-Fri</span>
+                        <br>
+                        <span class="dark">10am-10pm</span>
+                    </p>
+                    <br>
+                    <p>
+                        <span class="bold">Sat-Sun</span>
+                        <br>
+                        <span class="dark">10am-12am</span>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <p class="copyright">&copy;2024 Kagemori Japanese Cuisine. All rights reserved.</p>
+
+    </footer> 
+
+    <script src="script.js"></script>
+    <script src="responsive_navbar.js"></script>
+</body>
+</html>

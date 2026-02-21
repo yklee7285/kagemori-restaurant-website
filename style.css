@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Shippori Mincho", serif;
+}
+
+/* Background Image */
+.background{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.627),rgba(0, 0, 0, 0.6)) , url(background/main-background.jpg);
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #f0f4f8;
+}
+
+/* Main */
+.main-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding:  15% 8%;
+    font-size: 4.5rem;
+}
+@media screen and (max-width: 1430px){
+    .main-container{
+        padding:  20% 8% 21% 8%;
+        font-size: 3.5rem;  
+    }
+}
+@media screen and (max-width: 1110px){
+    .main-container{
+        padding:  25% 8% 21% 8%;
+        font-size: 2.5rem;  
+    }
+}
+@media screen and (max-width: 800px){
+    .main-container{
+        padding:  30% 8% 21% 8%;
+        font-size: 2rem;  
+    }
+}
+@media screen and (max-width: 650px){
+    .main-container{
+        padding:  35% 8% 21% 8%;
+        font-size: 1.5rem;  
+    }
+}
+@media screen and (max-width: 480px){
+    .main-container{
+        padding:  40% 5% 21% 5%;
+        font-size: 1.3rem;  
+    }
+}
+.main-button{
+    background-color: transparent;
+    color: #f0f4f8;
+    margin-top: 3rem;
+    padding: 10px 24px;
+    font-size: medium;
+    border: 2px solid #f0f4f8;
+    transition: all ease 0.5s;
+}
+.main-button:hover{
+    background-color: #f0f4f8;
+    color: #242124;
+}
+
+/* About */
+.about-container{
+    background-image: url(background/black-background.jpg);
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
+.about-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(background/main-about.jpg);
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media screen and (max-width: 935px){
+    .about-container{
+        background-image: url(background/black-background.jpg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-image{
+        display: none;
+    }
+}
+.about-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #f0f4f8; 
+    padding: 25% 15%;
+}
+@media screen and (max-width: 1210px){
+    .about-text{
+        padding: 25% 5%;
+    }
+}
+.about-text p{
+    padding: 1rem 0;
+    text-align: center;
+    font-size: small;
+}
+@media screen and (max-width: 470px){
+    .about-text p{
+        font-size: x-small;
+    }
+}
+.about-button{
+    background-color: transparent;
+    color: #f0f4f8;
+    padding: 10px 24px;
+    font-size: medium;
+    border: 2px solid #f0f4f8;
+    transition: all ease 0.5s;
+}
+.about-button:hover{
+    background-color: #f0f4f8;
+    color: #242124;
+    padding: 10px 24px;
+    font-size: medium;
+    border: 2px solid #f0f4f8;
+}
+
+/* Contact */
+.contact-container{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(background/main-contact.jpg);
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contact-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #f0f4f8; 
+    padding: 13%;
+}
+.contact-text p{
+    padding: 1rem 0;
+    text-align: center;
+}
+.contact-button{
+    background-color: transparent;
+    color: #f0f4f8;
+    margin-top: 10px;
+    padding: 10px 24px;
+    font-size: medium;
+    border: 2px solid #f0f4f8;
+    transition: all ease 0.5s;
+}
+.contact-button:hover{
+    background-color: #f0f4f8;
+    color: #242124;
+    margin-top: 10px;
+    padding: 10px 24px;
+    font-size: medium;
+    border: 2px solid #f0f4f8;
+}
+@media screen and (max-width: 480px){
+    .main-button, .about-button, .contact-button{
+        background-color: transparent;
+        color: #f0f4f8;
+        margin-top: 1rem;
+        padding: 10px 24px;
+        font-size: small;
+        border: 2px solid #f0f4f8;
+        transition: all ease 0.5s;
+    }
+}

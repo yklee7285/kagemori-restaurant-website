@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kagemori</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="contactstyle.css">
+    <link rel="stylesheet" href="navbar_footer.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Shippori+Mincho&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="background">
+        <!-- Navbar -->
+        <nav class="navbar">
+
+            <div class="navbar-container">
+                <a href="index.html"><img class="navbar-logo" src="logo/logo.png" alt="logo"></a>
+                <div class="navbar-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                    <ul class="navbar-menu">
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="index.html">Home</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="about.html">About</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link active" href="contact.html">Contact</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a id="navbar-login" class="navbar-link" href="login.html">LOGIN | SIGNUP</a>
+                        </li>
+                    </ul>
+            </div>
+            
+        </nav>
+
+        <div class="top-container">
+            <h1>Connect with Us – <br>Your Path to Tranquil Dining Awaits.</h1>
+        </div>
+
+    </div>
+        <!-- Contact  -->
+        <section class="contact">
+            <div class="contact-text">
+                <h1>Send Us a Message</h1>
+                <p>We value every message from our guests and appreciate the opportunity to hear from you. Please fill out the form below with your details, and a member of our team will respond as soon as possible. Thank you for taking the time to connect with us, and we look forward to serving you.</p>
+            </div>
+
+            <form action="#contact-form" class="contact-form" name="contact-form" onsubmit="return validateForm();">
+                <label for="name">Name - <i>Required</i></label>
+                <input type="text" id="name" name="name" placeholder="Jane Doe">
+                <span id="name-error" class="error-message"></span>
+                
+                <label for="email">Email - <i>Required</i></label>
+                <input type="text" id="email" name="email" placeholder="someone@example.com">
+                <span id="email-error" class="error-message"></span>
+
+                <label for="contact-number">Contact Number - <i>Required</i></label>
+                <input type="text" id="contact" name="contact-number" placeholder="012-3456789">
+                <span id="contact-error" class="error-message"></span>
+                
+                <label for="topic">Topic - <i>Required</i></label>
+                <select id="topic" name="topic">
+                    <option value="">Select topic</option>
+                    <option value="reservation">Reservation</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="complaint">Complaint</option>
+                </select>
+                <span id="topic-error" class="error-message"></span>
+
+                <br>
+                <label for="message">Message - <i>Required</i></label>
+                <textarea id="message" name="message" rows="6" placeholder="Enter your message"></textarea>
+                <span id="message-error" class="error-message"></span>
+                <input class="contact-button" type="submit" value="Submit" name="Submit">
+
+            </form>
+        </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-contact">
+                <div class="footer-text">
+                    <p><span class="bold">Contact</span></p><br>
+                    <p>
+                        <span class="bold">Phone Number</span>
+                        <br>
+                        <span class="dark">603-33416988</span>
+                    </p>
+                    <br>
+                    <p>
+                        <span class="bold">Email</span>
+                        <br>
+                        <span class="dark">kagemorijpcuisine@gmail.com</span>
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="line"></div>
+
+            <div class="footer-location">
+                <div class="footer-text">
+                    <p><span class="bold">Location</span></p>
+                    <br>
+                    <p><span class="dark">49, Jalan Lang,<br>Taman Berkerley,<br>41150 Klang,<br>Selangor, Malaysia.</span></p>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="footer-operating">
+                <div class="footer-text">
+                    <p><span class="bold">Operating Hours</span></p>
+                    <br>
+                    <p>
+                        <span class="bold">Mon-Fri</span>
+                        <br>
+                        <span class="dark">10am-10pm</span>
+                    </p>
+                    <br>
+                    <p>
+                        <span class="bold">Sat-Sun</span>
+                        <br>
+                        <span class="dark">10am-12am</span>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <p class="copyright">&copy;2024 Kagemori Japanese Cuisine. All rights reserved.</p>
+
+    </footer> 
+
+    <script src="script.js"></script>
+    <script src="contact_script.js"></script>
+    <script src="responsive_navbar.js"></script>
+</body>
+</html>

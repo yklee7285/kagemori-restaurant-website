@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Shippori Mincho", serif;
+}
+
+/* Background Image */
+.background{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.427),rgba(0, 0, 0, 0.4)) , url(background/contact-background.jpg);
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #f0f4f8;
+}
+
+/* Top Section */
+.top-container{
+    align-items: center;
+    padding:  14% 8% 21% 8%;
+    font-size: 2.2rem;
+}
+@media screen and (max-width: 1480px){
+    .top-container{
+        padding:  20% 8% 21% 8%;
+        font-size: 1.5rem;  
+    }
+}
+@media screen and (max-width: 1024px){
+    .top-container{
+        padding:  25% 8% 21% 8%;
+        font-size: 1rem;  
+    }
+}
+@media screen and (max-width: 680px){
+    .top-container{
+        padding:  30% 8% 21% 8%;
+        font-size: 0.7rem;  
+    }
+}
+@media screen and (max-width: 480px){
+    .top-container{
+        padding:  35% 8% 21% 8%;
+        font-size: 0.45rem;  
+    }
+}
+
+/* Contact */
+.contact{
+    max-width: 1500px;
+    color: #f0f4f8;
+    padding: 50px 30%;
+    background-image: url(background/black-background.jpg);
+}
+.contact-text{
+    text-align: justify;
+    padding: 1rem;
+}
+.contact-text h1{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+i{
+    color:#949494;
+    size:5px;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+.contact-form input, textarea {
+    margin: 10px 0;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #949494;
+    border-radius: 4px;
+}
+.contact-form select{
+    height: 48.8px;
+    margin: 10px 0;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #949494;
+    border-radius: 4px;
+}
+input[type=submit] {
+    background-color: #f0f4f8;
+    color: #242124;
+    width: 30%;
+    align-self: center;
+    font-size: 1rem;
+    padding: 12px;
+    margin: 1rem 0;
+    border: 2px solid #f0f4f8;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all ease 0.35s;
+}
+input[type=submit]:hover{
+    background-color: #949494;
+    color: #f0f4f8;
+    border: 2px solid #949494;
+}
+.error-message {
+    color: red;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+.submission-successful {
+    color: #f0f4f8;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+@media screen and (max-width: 770px){
+    .contact{
+        padding: 50px 20%;
+    }
+    .contact-text{
+        font-size: 0.9rem;
+    }
+    .contact-text h1{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 430px){
+    .contact{
+        padding: 50px 10%;
+    }
+    .contact-text{
+        font-size: 0.85rem;
+    }
+    .contact-text h1{
+        font-size: 1.7rem;
+    }
+}
+@media screen and (max-width: 330px){
+    .contact{
+        padding: 50px 10%;
+    }
+    .contact-text{
+        font-size: 0.75rem;
+    }
+    .contact-text h1{
+        font-size: 1.5rem;
+    }
+    input[type=submit] {
+        width: 40%;
+    }
+    input[type=submit]:hover {
+        width: 40%;
+    }
+}
